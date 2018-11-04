@@ -2,26 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22bc86dc-548a-471d-8235-09cb7408c0c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/ImagesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/PopularSight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/PopularSightRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/RatingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/SightRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Sight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/enums/PriceCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/enums/SightCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/enums/TypeOfSight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Controller/SightsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Controller/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Service/Interface/SightsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Service/Interface/UsersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Service/SightsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database/InitDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database/PopulateDB.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/ImagesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/PopularSight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Rating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/CommentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/PopularSightRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/RatingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/SightRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Sight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/enums/PriceCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/enums/SightCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Guide/Server/Models/enums/TypeOfSight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,60 +44,91 @@
     <session id="1385332155">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="3" />
           <entry key="iml" value="4" />
-          <entry key="java" value="53" />
+          <entry key="java" value="110" />
           <entry key="md" value="1" />
-          <entry key="properties" value="2" />
-          <entry key="xml" value="2" />
+          <entry key="properties" value="7" />
+          <entry key="sql" value="2" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="53" />
+          <entry key="JAVA" value="110" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="2" />
-          <entry key="XML" value="2" />
+          <entry key="Properties" value="7" />
+          <entry key="SQL" value="2" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="9" />
-          <entry key="java" value="1628" />
-          <entry key="properties" value="58" />
-          <entry key="xml" value="46" />
+          <entry key="dummy" value="12" />
+          <entry key="java" value="1845" />
+          <entry key="properties" value="109" />
+          <entry key="xml" value="173" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1628" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Properties" value="58" />
-          <entry key="XML" value="46" />
+          <entry key="JAVA" value="1845" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Properties" value="109" />
+          <entry key="XML" value="173" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Service/Interface/UsersService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Service/SightsServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Service/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -99,10 +139,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Application.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/TestController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/ImagesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/SightRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/CommentRepository.java" />
@@ -111,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/PriceCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/SightCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/TypeOfSight.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/PopularSights.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Like.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/PopularSightRepository.java" />
@@ -121,6 +157,28 @@
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Rating.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/PopularSight.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Models/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/TestController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-local.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Model/Rating.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Model/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Model/Sight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Model/PopularSight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Repository/CommentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Repository/PopularSightRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Repository/RatingRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Repository/SightRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Controller/SightsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Controller/UsersController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Service/UsersService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Service/Interface/UsersService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Guide/Server/Service/SightsServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -131,9 +189,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-82" />
-    <option name="y" value="51" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-96" />
+    <option name="y" value="102" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -145,7 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -187,7 +244,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GuideServer" type="b2602c69:ProjectViewProjectNode" />
@@ -196,7 +253,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GuideServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Guide.Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GuideServer" type="b2602c69:ProjectViewProjectNode" />
@@ -205,16 +272,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GuideServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Projects/Programming/Java/Intellij_Idea/Guide.Server/src/main/java/Guide/Server/Models/User.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540922909105" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Krasnoyarsk.Guide.Server" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541348522769" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/customerdemo-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -222,8 +294,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\Programming\Java\Intellij_Idea\Guide.Server\src\main\java\Guide\Server\Controllers" />
       <recent name="D:\Projects\Programming\Java\Intellij_Idea\Guide.Server\src\main\java\Guide\Server" />
+      <recent name="D:\Projects\Programming\Java\Intellij_Idea\Guide.Server\src\main\java\Guide\Server\Controllers" />
       <recent name="D:\Projects\Programming\Java\Intellij_Idea\Guide.Server\src\main\java" />
     </key>
   </component>
@@ -239,6 +311,27 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.Application (local)">
+    <configuration name="Application (local)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Guide.Server.Application" />
+      <module name="Guide.Server" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=local" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (main)" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Guide.Server.Application" />
+      <module name="Guide.Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Application (main)" />
+      <item itemvalue="Application.Application (local)" />
+    </list>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -253,15 +346,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22163388" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2246596" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
@@ -300,23 +394,6 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/Id.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -324,14 +401,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Controllers/ImagesController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Controller/ImagesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
@@ -341,135 +411,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Model/Enum/TypeOfSight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Model/Enum/SightCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="69" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/SightRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Model/Enum/PriceCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database/InitDB.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database/PopulateDB.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="221">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/enums/TypeOfSight.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="-322">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/enums/SightCategory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/enums/PriceCategory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/PopularSightRepository.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar!/javax/persistence/TemporalType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="86" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="86" />
+        <state relative-caret-position="34">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Model/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/RatingRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Model/PopularSight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="306">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/Repositories/CommentRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Model/Rating.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="449">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/PopularSight.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Model/Sight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+        <state relative-caret-position="714">
+          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/Comment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-          <folding>
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/Sight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+        <state relative-caret-position="833">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/Rating.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Repository/CommentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+        <state relative-caret-position="68">
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Models/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Repository/PopularSightRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Repository/RatingRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Repository/SightRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2180">
+          <caret line="197" column="32" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Controller/SightsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Service/Interface/SightsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Service/SightsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Controller/UsersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Guide/Server/Service/Interface/UsersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-package Guide.Server.Models.enums;
+package Guide.Server.Model.Enum;
 
 public enum SightCategory {
     ROAD,
